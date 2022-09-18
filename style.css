@@ -9,6 +9,12 @@ body {
   background-color: #DAECF3;
 }
 
+#background {
+  width: 445px;
+  width: 688px;
+  background-image: url('/background.png');
+}
+
 .roboto {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
