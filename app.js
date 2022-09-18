@@ -53,30 +53,30 @@ const getCharcodesFromMessage = () => getMessage().split('').map(val => val.char
 
 const cypherCharcodes = charcodesArray => charcodesArray.map((charCode, i) => {
   if (charCode > 47 && charCode < 58) {
-    charCode = (charCode - 48 + 33) % 10 + 48;
+    charCode = (charCode - 48 + 3) % 10 + 48;
   } else if (charCode > 64 && charCode < 91) {
-    charCode = (charCode - 65 + 33) % 26 + 65;
+    charCode = (charCode - 65 + 3) % 26 + 65;
   } if (charCode > 96 && charCode < 192) {
-    charCode = (charCode - 97 + 33) % 26 + 97;
+    charCode = (charCode - 97 + 3) % 26 + 97;
   } else if (charCode > 191 && charCode < 222) {
-    charCode = (charCode - 192 + 33) % 30 + 192;
+    charCode = (charCode - 192 + 3) % 30 + 192;
   } else if (charCode > 221 && charCode <= 255) {
-    charCode = (charCode - 222 + 33) % 34 + 222;
+    charCode = (charCode - 222 + 3) % 34 + 222;
   } 
   return charCode;
 });
 
 const decypherCharcodes = charcodesArray => charcodesArray.map((charCode, i) => {
   if (charCode > 47 && charCode < 58) {
-    charCode = (charCode - 57 - 33) % 10 + 57;
+    charCode = (charCode - 57 - 3) % 10 + 57;
   } else if (charCode > 64 && charCode < 91) {
-    charCode = (charCode - 90 - 33) % 26 + 90;
+    charCode = (charCode - 90 - 3) % 26 + 90;
   } else if (charCode > 96 && charCode < 192) {
-    charCode = (charCode - 122 - 33) % 26 + 122;
+    charCode = (charCode - 122 - 3) % 26 + 122;
   } else if (charCode > 191 && charCode < 222) {
-    charCode = (charCode - 221 - 33) % 30 + 221;
+    charCode = (charCode - 221 - 3) % 30 + 221;
   } else if (charCode > 221 && charCode <= 255) {
-    charCode = (charCode - 255 - 33) % 34 + 255;
+    charCode = (charCode - 255 - 3) % 34 + 255;
   }
   return charCode;
 });
