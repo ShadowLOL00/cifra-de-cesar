@@ -10,7 +10,7 @@ Página: https://marciapsilva.github.io/cifra-de-cesar/
 
 Os requisitos deste desafio eram:
 
-- Parâmetro de deslocamento das palavras de 33 espaços à direita;
+- Parâmetro de deslocamento das palavras de 3 espaços à direita;
 - Capacidade de criptografar e descriptografar letras maiúsculas e minúsculas;
 - Usar apenas duas funções para executar as tarefas: cypher e decypher;
 - Não permitir que o usuário insira um campo vazio ou que contenha números;
