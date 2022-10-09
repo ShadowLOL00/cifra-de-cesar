@@ -9,7 +9,7 @@ body {
   background-color: #DAECF3;
 }
 
-#background {
+.bg {
   width: 445px;
   width: 688px;
   background-image: url('/background.png');
